@@ -1,4 +1,4 @@
-﻿﻿using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using TrabajoIntegrador.Entities;
 using TrabajoIntegrador.DTOs;
@@ -20,7 +20,7 @@ namespace TrabajoIntegrador.Controllers
 
         [HttpPost]
         [Route("Agregar")]
-        public IActionResult Agregar(ProyectoDto proyectos) 
+        public IActionResult Agregar(ProyectoDto proyecto) 
         {
                 return Unauthorized("No se pudo agregar proyecto");
         }
@@ -39,7 +39,7 @@ namespace TrabajoIntegrador.Controllers
         public IActionResult EliminarProyecto(int id)
         {
             return Ok($"Se elimino el elemento {id} correctamente");  //Para mandar un parametro tengo que poner el signo pesos al inicio y
-        }                                                              //el parametro entre corchetes
+        }                                                             //el parametro entre corchetes
 
     }
 }
