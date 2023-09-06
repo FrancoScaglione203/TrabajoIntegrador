@@ -5,7 +5,7 @@
         public int Id { get; set; }
         public string Nombre { get; set; }
         public int Dni { get; set; }
-        public int tipo { get; set; }  
-        public string contraseña { get; set; }
+        public int Tipo { get; set; }  
+        public string Clave { get; set; }
     }
 }
